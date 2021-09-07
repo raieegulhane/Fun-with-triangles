@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Hypotenuse Calculator</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-head">Fun With Triangles</div>
+
+        <a href="/index.html" class="nav-links">Home</a>
+        <a href="/htmlPages/quiz.html" class="nav-links">Quiz</a>
+        <a href="/htmlPages/isTriangle.html" class="nav-links">Is Triangle</a>
+        <a href="/htmlPages/findHypo.html" class="nav-links">Find Hypotenuse</a>
+        <a href="/htmlPages/area.html" class="nav-links">Find Area</a>
+    </nav>
+
+    <div class="container container-hypoteous">
+        <header>
+            <h1>Triangle Hypotenuse Calculator</h1>
+        </header>
+
+        <div class="formula">
+            Hypotenuse = √(base² + height²) 
+        </div>
+
+        <div class="main-area">
+            <label for="base">Enter base:</label>
+            <input type="number" class="input-side">
+
+            <label for="height">Enter height:</label>
+            <input type="number" class="input-side">
+
+            <button id="btn-calculate-hypo">Calculate Hypotenuse</button>
+
+            <div class="message"></div>
+        </div>
+    </div>
+
+    <script src="/javaScript/findHypo.js"></script>
+    
+</body>
+</html>
