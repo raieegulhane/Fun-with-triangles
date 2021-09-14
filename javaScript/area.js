@@ -3,10 +3,16 @@ const calculateBtn = document.querySelector('#btn-calculate-area');
 const message = document.querySelector('.message');
 
 calculateBtn.addEventListener('click', () => {
-    if (inputSide[0].value && inputSide[1].value) {
-        const triangleArea = calculateArea(Number(inputSide[0].value), Number(inputSide[1].value));
+    var triHeight = inputSide[0].value;
+    var triBase = inputSide[1].value;
+    if (triHeight && triBase) {
+       if (triHeight > 0 && triBase > 0) {
+            const triangleArea = calculateArea(Number(inputSide[0].value), Number(inputSide[1].value));
 
-        showMessage("The area of this triangle is " +triangleArea+ " square units");
+            showMessage("The area of this triangle is " +triangleArea+ " square units");
+        } else {
+            showMessage('Height or base of triangle cannot be 0 or negative.')
+        }
     } else {
         showMessage("Enter values in both fields to continue");
     }

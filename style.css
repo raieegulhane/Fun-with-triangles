@@ -63,6 +63,12 @@ nav {
 	border-radius: 6px;
 }
 
+.active-link {
+    background-color: var(--pink1);
+	border-color: var(--pink1);
+	border-radius: 6px;
+}
+
 .header-home {
 	background-color: var(--blue);
 	padding: 2rem;
@@ -118,7 +124,8 @@ nav {
 
 .formula {
 	color: var(--pink0);
-	font-size: 17px;
+	font-size: 20px;
+	font-weight: bold;
 	max-width: fit-content;
 	padding: 1rem 1.5rem;
 	border: 3px solid var(--pink1);
@@ -128,8 +135,8 @@ nav {
 
 .tri-condition span {
 	display: block;
-	font-size: 20px;
-	font-weight: bold;
+    font-size: 17px;
+    font-weight: normal;
 }
 
 .questions {
@@ -176,20 +183,6 @@ input {
 	display: inline;
 }
 
-button {
-	background-color: var(--pink1);
-	color: white;
-	font-family: var(--body-font);
-	font-size: 17px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding: 0.5rem 2rem;
-	border: none;
-	border-radius: 2rem;
-	margin-top: 2rem;
-	transition: 0.5s ease;
-}
-
 .div-message {
 	background-color: var(--pink1);
 	color: white;
@@ -207,6 +200,20 @@ button {
 .message {
 	font-family: var(--head-font);
 	font-size: 20px;
+}
+
+button {
+	background-color: var(--pink1);
+	color: white;
+	font-family: var(--body-font);
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	margin-top: 2rem;
+	transition: 0.5s ease;
 }
 
 button:hover {
