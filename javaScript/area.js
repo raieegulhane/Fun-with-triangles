@@ -7,7 +7,7 @@ calculateBtn.addEventListener('click', () => {
     var triBase = inputSide[1].value;
     if (triHeight && triBase) {
        if (triHeight > 0 && triBase > 0) {
-            const triangleArea = calculateArea(Number(inputSide[0].value), Number(inputSide[1].value));
+            const triangleArea = calculateArea(Number(triHeight), Number(triBase));
 
             showMessage("The area of this triangle is " +triangleArea+ " square units");
         } else {

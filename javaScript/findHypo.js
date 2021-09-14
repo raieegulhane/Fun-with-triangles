@@ -7,7 +7,7 @@ calculateBtn.addEventListener('click', () => {
     var side2 = inputSide[1].value;
     if (side1 && side2) {
         if (side1 > 0 && side2 > 0) {
-            const hypo = calculateHypotenuse(Number(inputSide[0].value), Number(inputSide[1].value));
+            const hypo = calculateHypotenuse(Number(side1), Number(side2));
             showMessage("The hypotenuse for this triangle is " + hypo + " units.")
         } else {
             showMessage('Sides of triangle cannot be 0 or negative.')
