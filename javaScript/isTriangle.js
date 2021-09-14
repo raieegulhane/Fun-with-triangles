@@ -8,24 +8,30 @@ checkButton.addEventListener('click', () => {
     if (side[0].value && side[1].value && side[2].value) {
         checkTriangle(Number(side[0].value), Number(side[1].value), Number(side[2].value));
     } else {
-        showMessage ('Enter values in all fields to continue.');
+        showMessage('Enter values in all fields to continue.');
     }
 });
 
-function checkTriangle (angleA, angleB, angleC) {
+function checkTriangle(angleA, angleB, angleC) {
     const anglesSum = angleA + angleB + angleC;
 
-    divAmglesSum.style.display = 'block';
-    spanSum.innerText = anglesSum+ "º"
-
-    if (anglesSum === 180) {
-        showMessage("Yayy! These angles form a triangle.");
+    if (angleA >= 0 && angleB >= 0 && angleC >= 0) {
+        if (anglesSum === 180) {
+            divAmglesSum.style.display = 'block';
+            spanSum.innerText = anglesSum + "º"
+            showMessage("Yayy! These angles form a triangle.");
+        } else {
+            spanSum.style.display = "none";
+            showMessage("Oops!! Triangle cannot be formed with these angles.");
+        }
     } else {
-        showMessage("Oops!! Triangle cannot be formed with these angles.");
+        spanSum.style.display = "none";
+        showMessage("Angles cannot be negative.")
     }
+
 }
 
-function showMessage (text) {
+function showMessage(text) {
     message.innerText = text;
 }
 

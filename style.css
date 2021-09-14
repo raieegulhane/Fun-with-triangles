@@ -9,7 +9,8 @@
     --pink0: #ff9296;
     --pink1: #FF9FA3;
     --pink2: #F7E0E6;
-    --blue: #A4DADC;
+    --pink3: #faf0f2;
+    --blue: #78d8db;
     --grey: #949391;
     --yellow: #D9AF39;
     --back: #f5f2e9;
@@ -23,8 +24,43 @@
 body {
     background: url("/images/15348.jpg");
     background-size: contain;
+    color: white;
     font-family: var(--body-font);
     text-align: center;
+}
+
+nav {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nav-head {
+    font-family: var(--head-font);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-pills {
+    display: flex;
+    min-width: 37%;
+    justify-content: space-between;
+}
+
+.nav-pills a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    border: 2px solid var(--blue);
+}
+
+.nav-pills a:hover {
+    background-color: var(--pink1);
+    border-color: var(--pink1);
+    border-radius: 6px;
 }
 
 .header-home {
@@ -41,38 +77,97 @@ body {
     word-spacing: 5px;
 }
 
-.container-home {
+.container {
     padding: 2rem;
 }
 
-.container-inside-home {
+.container-inside {
     background-color: #F7E0E6dc;
     display: block;
-    max-width: 500px;
+    max-width: 700px;
     padding: 2rem 3rem;
     border-radius: 2rem;
     margin: 2rem auto;
 }
 
-.container-inside-home h2 {
+.container-inside h1 {
     color: var(--pink0);
     font-family: var(--head-font);
     font-weight: 800;
     font-size: 27px;
 }
 
-.container-inside-home a {
+.container-inside a {
     display: block;
     background-color: var(--pink1);
     color: white;
     font-family: var(--body-font);
     font-weight: 800;
     text-decoration: none;
-    padding: 1rem 2rem;
+    max-width: 270px;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    margin: 1.5rem auto 0.5rem auto;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container-inside a:hover {
+    background-color: var(--blue);
+}
+
+.formula {
+    color: var(--pink0);
+    font-size: 17px;
+    max-width: fit-content;
+    padding: 1rem 1.5rem;
+    border: 3px solid var(--pink1);
+    border-radius: 1rem;
+    margin: 1.5rem auto 1rem auto;
+}
+
+.tri-condition span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    color: var(--pink0);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    margin: auto;
+}
+
+input {
+    display: block;
+    background-color: var(--pink3);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--pink1);
+    border-radius: 0.5rem;
+    margin: auto;
+    outline: none;
+}
+
+button {
+    background-color: var(--pink1);
+    color: white;
+    font-family: var(--body-font);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.5rem 2rem;
+    border: none;
     border-radius: 2rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: var(--blue);
 }
 
 #sum-of-angles {
@@ -124,6 +219,6 @@ svg:hover {
 
 .git-repo:hover {
     background-color: var(--pink1);
-    border: 3px solid var(--pink1);
+    border-color: var(--pink1);
     border-radius: 6px;
 }
