@@ -1,131 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/style.css" />
 
-    <title>Triangles Quiz</title>
-</head>
-<body>
+		<title>Triangles Quiz</title>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-head">Fun With Triangles</div>
 
-    <nav>
-        <div class="nav-head">Fun With Triangles</div>
+			<a href="/index.html" class="nav-links">Home</a>
+			<a href="/htmlPages/quiz.html" class="nav-links">Quiz</a>
+			<a href="/htmlPages/isTriangle.html" class="nav-links">Is Triangle</a>
+			<a href="/htmlPages/findHypo.html" class="nav-links">Find Hypotenuse</a>
+			<a href="/htmlPages/area.html" class="nav-links">Find Area</a>
+		</nav>
 
-        <a href="/index.html" class="nav-links">Home</a>
-        <a href="/htmlPages/quiz.html" class="nav-links">Quiz</a>
-        <a href="/htmlPages/isTriangle.html" class="nav-links">Is Triangle</a>
-        <a href="/htmlPages/findHypo.html" class="nav-links">Find Hypotenuse</a>
-        <a href="/htmlPages/area.html" class="nav-links">Find Area</a>
-    </nav>
+		<div class="container container-quiz">
+			<header>
+				<h1>Triangle Quiz</h1>
+			</header>
 
-    <div class="container container-quiz">
+			<form id="form-quiz">
+				<div class="questions">
+					<p>
+						1. In a triangle, angle A is 30º and angle B is 70º. What is the
+						measure of angle C?
+					</p>
+					<label><input type="radio" name="question1" value="60º" />60º</label>
+					<label><input type="radio" name="question1" value="80º" />80º</label>
+					<label><input type="radio" name="question1" value="90º" />90º</label>
+					<label><input type="radio" name="question1" value="70º" />70º</label>
+				</div>
+				<div class="questions">
+					<p>
+						2. What is the area of the right triangle side lengths 5, 12 and 13?
+					</p>
+					<label><input type="radio" name="question2" value="45" />45</label>
+					<label><input type="radio" name="question2" value="60" />60</label>
+					<label><input type="radio" name="question2" value="30" />30</label>
+					<label><input type="radio" name="question2" value="40" />40</label>
+				</div>
+				<div class="questions">
+					<p>3. Which triangle has all three sides equal in length?</p>
+					<label
+						><input type="radio" name="question3" value="Right" />Right</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question3"
+							value="Scalene"
+						/>Scalene</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question3"
+							value="Isosceles"
+						/>Isosceles</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question3"
+							value="Equilateral"
+						/>Equilateral</label
+					>
+				</div>
+				<div class="questions">
+					<p>
+						4. A triangle has two angles measuring 42° and one angle measuring
+						96°. What type of triangle is this?
+					</p>
+					<label
+						><input
+							type="radio"
+							name="question4"
+							value="Equilateral"
+						/>Equilateral</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question4"
+							value="Isosceles"
+						/>Isosceles</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question4"
+							value="Scalene"
+						/>Scalene</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question4"
+							value="None of the above"
+						/>None of the above</label
+					>
+				</div>
+				<div class="questions">
+					<p>5. Which triangle has three unequal sides?</p>
+					<label
+						><input
+							type="radio"
+							name="question5"
+							value="Scalene"
+						/>Scalene</label
+					>
+					<label
+						><input type="radio" name="question5" value="Right" />Right</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question5"
+							value="Isosceles"
+						/>Isosceles</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question5"
+							value="Equilateral"
+						/>Equilateral</label
+					>
+				</div>
+				<div class="questions">
+					<p>6. What type of triangle has all angles measuring 60°?</p>
+					<label
+						><input
+							type="radio"
+							name="question6"
+							value="Equilateral"
+						/>Equilateral</label
+					>
+					<label
+						><input type="radio" name="question6" value="Right" />Right</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question6"
+							value="Isosceles"
+						/>Isosceles</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question6"
+							value="Scalene"
+						/>Scalene</label
+					>
+				</div>
+				<div class="questions">
+					<p>
+						7. In a right triangle, what is the side opposite to the right angle
+						called?
+					</p>
+					<label
+						><input
+							type="radio"
+							name="question7"
+							value="Altitude"
+						/>Altitude</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question7"
+							value="Hypotenuse"
+						/>Hypotenuse</label
+					>
+					<label><input type="radio" name="question7" value="Leg" />Leg</label>
+					<label
+						><input type="radio" name="question7" value="Base" />Base</label
+					>
+				</div>
+				<div class="questions">
+					<p>
+						8. There is a right triangle PQR where: angle Q = 90°; angle P =
+						angle R. What is the measure of angles P and R?
+					</p>
+					<label><input type="radio" name="question8" value="85°" />85°</label>
+					<label><input type="radio" name="question8" value="65°" />65°</label>
+					<label><input type="radio" name="question8" value="45°" />45°</label>
+					<label><input type="radio" name="question8" value="30°" />30°</label>
+				</div>
+				<div class="questions">
+					<p>9. An equilateral triangle is also an _______ triangle.</p>
+					<label
+						><input type="radio" name="question9" value="Acute" />Acute</label
+					>
+					<label
+						><input type="radio" name="question9" value="Obtuse" />Obtuse</label
+					>
+					<label
+						><input type="radio" name="question9" value="Right" />Right</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question9"
+							value="Scalene"
+						/>Scalene</label
+					>
+				</div>
+				<div class="questions">
+					<p>10. Which triangle has an angle greater than 90°?</p>
+					<label
+						><input type="radio" name="question10" value="Acute" />Acute</label
+					>
+					<label
+						><input type="radio" name="question10" value="Right" />Right</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question10"
+							value="Obtuse"
+						/>Obtuse</label
+					>
+					<label
+						><input
+							type="radio"
+							name="question10"
+							value="Isosceles"
+						/>Isosceles</label
+					>
+				</div>
+			</form>
 
-        <header>
-            <h1>Triangle Quiz</h1>
-        </header>
-        
-        <form id="form-quiz">
-            <div class="questions">
-                <p>
-                    1. In a triangle, angle A is 30º and angle B is 70º. What is the measure of angle C?
-                </p>
-                <label><input type="radio" name="question1" value="60º">60º</label>
-                <label><input type="radio" name="question1" value="80º">80º</label>
-                <label><input type="radio" name="question1" value="90º">90º</label>
-                <label><input type="radio" name="question1" value="70º">70º</label>
-            </div>
-            <div class="questions">
-                <p>
-                   2.  What is the area of the right triangle side lengths 5, 12 and 13?
-                </p>
-                <label><input type="radio" name="question2" value="45">45</label>
-                <label><input type="radio" name="question2" value="60">60</label>
-                <label><input type="radio" name="question2" value="30">30</label>
-                <label><input type="radio" name="question2" value="40">40</label>
-            </div>
-            <div class="questions">
-                <p>
-                    3. Which triangle has all three sides equal in length?
-                </p>
-                <label><input type="radio" name="question3" value="Right">Right</label>
-                <label><input type="radio" name="question3" value="Scalene">Scalene</label>
-                <label><input type="radio" name="question3" value="Isosceles">Isosceles</label>
-                <label><input type="radio" name="question3" value="Equilateral">Equilateral</label>
-            </div>
-            <div class="questions">
-                <p>
-                    4. A triangle has two angles measuring 42° and one angle measuring 96°. What type of triangle is this?
-                </p>
-                <label><input type="radio" name="question4" value="Equilateral">Equilateral</label>
-                <label><input type="radio" name="question4" value="Isosceles">Isosceles</label>
-                <label><input type="radio" name="question4" value="Scalene">Scalene</label>
-                <label><input type="radio" name="question4" value="None of the above">None of the above</label>
-            </div>
-            <div class="questions">
-                <p>
-                    5. Which triangle has three unequal sides?
-                </p>
-                <label><input type="radio" name="question5" value="Scalene">Scalene</label>
-                <label><input type="radio" name="question5" value="Right">Right</label>
-                <label><input type="radio" name="question5" value="Isosceles">Isosceles</label>
-                <label><input type="radio" name="question5" value="Equilateral">Equilateral</label>
-            </div>
-            <div class="questions">
-                <p>
-                    6. What type of triangle has all angles measuring 60°?
-                </p>
-                <label><input type="radio" name="question6" value="Equilateral">Equilateral</label>
-                <label><input type="radio" name="question6" value="Right">Right</label>
-                <label><input type="radio" name="question6" value="Isosceles">Isosceles</label>
-                <label><input type="radio" name="question6" value="Scalene">Scalene</label>
-            </div>
-            <div class="questions">
-                <p>
-                    7. In a right triangle, what is the side opposite to the right angle called?
-                </p>
-                <label><input type="radio" name="question7" value="Altitude">Altitude</label>
-                <label><input type="radio" name="question7" value="Hypotenuse">Hypotenuse</label>
-                <label><input type="radio" name="question7" value="Leg">Leg</label>
-                <label><input type="radio" name="question7" value="Base">Base</label>
-            </div>
-            <div class="questions">
-                <p>
-                    8. There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R? 
-                </p>
-                <label><input type="radio" name="question8" value="85°">85°</label>
-                <label><input type="radio" name="question8" value="65°">65°</label>
-                <label><input type="radio" name="question8" value="45°">45°</label>
-                <label><input type="radio" name="question8" value="30°">30°</label>
-            </div>
-            <div class="questions">
-                <p>
-                    9. An equilateral triangle is also an _______ triangle.
-                </p>
-                <label><input type="radio" name="question9" value="Acute">Acute</label>
-                <label><input type="radio" name="question9" value="Obtuse">Obtuse</label>
-                <label><input type="radio" name="question9" value="Right">Right</label>
-                <label><input type="radio" name="question9" value="Scalene">Scalene</label>
-            </div>
-            <div class="questions">
-                <p>
-                    10. Which triangle has an angle greater than 90°?
-                </p>
-                <label><input type="radio" name="question10" value="Acute">Acute</label>
-                <label><input type="radio" name="question10" value="Right">Right</label>
-                <label><input type="radio" name="question10" value="Obtuse">Obtuse</label>
-                <label><input type="radio" name="question10" value="Isosceles">Isosceles</label>
-            </div>
-        </form>
+			<button id="button-submit">Submit</button>
 
-        <button id="button-submit">Submit</button>
+			<div class="message"></div>
+		</div>
 
-        <div class="message"></div>
-    </div>
-
-    <script src="/javaScript/quiz.js"></script>
-    
-</body>
+		<script src="/javaScript/quiz.js"></script>
+	</body>
 </html>
