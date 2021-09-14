@@ -16,7 +16,7 @@ checkButton.addEventListener('click', () => {
 function checkTriangle(angleA, angleB, angleC) {
     const anglesSum = angleA + angleB + angleC;
 
-    if (angleA >= 0 && angleB >= 0 && angleC >= 0) {
+    if (angleA > 0 && angleB > 0 && angleC > 0) {
         if (anglesSum === 180) {
             divAmglesSum.style.display = 'block';
             spanSum.innerText = anglesSum + "º";
@@ -28,7 +28,7 @@ function checkTriangle(angleA, angleB, angleC) {
         }
     } else {
         divAmglesSum.style.display = "none";
-        showMessage("Angles cannot be negative.")
+        showMessage("Angles cannot be 0 or negative.")
     }
 
 }
