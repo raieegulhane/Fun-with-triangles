@@ -20,7 +20,7 @@ calculateBtn.addEventListener('click', () => {
 });
 
 function calculateArea (base, height) {
-    const area = (base * height) / 2;
+    const area = ((base * height) / 2).toFixed(2);
     return area;
 }
 
