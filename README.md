@@ -1,4 +1,4 @@
-# Fun-with-triangles
+# Fun With Triangles
 
 
 DESCRIPTION:
