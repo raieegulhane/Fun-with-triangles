@@ -1,8 +1,11 @@
 const inputSide = document.querySelectorAll('.input-side');
 const calculateBtn = document.querySelector('#btn-calculate-area');
 const message = document.querySelector('.message');
+const messageDiv = document.querySelector('.div-message');
 
 calculateBtn.addEventListener('click', () => {
+    messageDiv.style.display = "block";
+
     var triHeight = inputSide[0].value;
     var triBase = inputSide[1].value;
     if (triHeight && triBase) {

@@ -1,10 +1,13 @@
 const side = document.querySelectorAll('.input-side');
 const checkButton = document.querySelector('#btn-check');
 const message = document.querySelector('.message');
+const messageDiv = document.querySelector('.div-message');
 const divAmglesSum = document.querySelector('#sum-of-angles');
 const spanSum = document.querySelector('#sum');
 
 checkButton.addEventListener('click', () => {
+    messageDiv.style.display = "block";
+
     if (side[0].value && side[1].value && side[2].value) {
         checkTriangle(Number(side[0].value), Number(side[1].value), Number(side[2].value));
     } else {

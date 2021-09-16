@@ -1,8 +1,11 @@
 const inputSide = document.querySelectorAll('.input-side');
 const calculateBtn = document.querySelector('#btn-calculate-hypo');
 const message = document.querySelector('.message');
+const messageDiv = document.querySelector('.div-message');
 
 calculateBtn.addEventListener('click', () => {
+    messageDiv.style.display = "block";
+
     var side1 = inputSide[0].value;
     var side2 = inputSide[1].value;
     if (side1 && side2) {
