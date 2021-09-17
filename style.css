@@ -27,6 +27,7 @@ body {
 	color: white;
 	font-family: var(--body-font);
 	text-align: center;
+	box-sizing: border-box;
 }
 
 nav {
@@ -329,6 +330,7 @@ svg:hover {
 	}
 
 	.nav-pills {
+		overflow-x: hidden;
 		position: absolute;
 		background-color: var(--blue);
 		right: 0;
@@ -341,6 +343,7 @@ svg:hover {
 		justify-content: space-evenly;
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in;
+		display: none;
 	}
 
 	.nav-pills a {
@@ -350,6 +353,7 @@ svg:hover {
 
 .nav-active {
 	transform: translateX(0%);
+	display: flex;
 }
 
 @keyframes navLinkFade {
