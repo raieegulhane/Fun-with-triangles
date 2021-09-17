@@ -46,8 +46,27 @@ nav {
 
 .nav-pills {
 	display: flex;
-	min-width: 37%;
+	min-width: 40%;
 	justify-content: space-between;
+}
+
+.burger {
+	display: none;
+	border: 2px solid var(--blue);
+}
+
+.burger:hover {
+	background-color: var(--pink1);
+	border-color: var(--pink1);
+	border-radius: 6px;
+}
+
+.burger div {
+	background-color: white;
+	width: 20px;
+	height: 2.5px;
+	border-radius: 5px;
+	margin: 4.7px;
 }
 
 .nav-pills a {
@@ -128,7 +147,7 @@ nav {
 	color: var(--pink0);
 	font-size: 20px;
 	font-weight: bold;
-	max-width: fit-content;
+	max-width: 80%;
 	padding: 1rem 1.5rem;
 	border: 3px solid var(--pink1);
 	border-radius: 1rem;
@@ -270,4 +289,62 @@ svg:hover {
 	background-color: var(--pink1);
 	border-color: var(--pink1);
 	border-radius: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+	.nav-pills {
+		min-width: 55%;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	nav {
+		align-items: center;
+	}
+
+	.nav-head {
+		font-size: 17px;
+	}
+
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-pills {
+		position: absolute;
+		background-color: var(--blue);
+		right: 0;
+		top: 80px;
+		height: 95%;
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-pills a {
+		opacity: 0;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	} to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
