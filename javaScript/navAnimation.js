@@ -16,8 +16,11 @@ burger.addEventListener('click', () => {
     // to toggle nav
     navPills.classList.toggle("nav-active");
 
-    // for animation
+    // for navbar animation
     navAnimation();
+
+    // for burger animation 
+    burger.classList.toggle("burger-active");
 });
 
 

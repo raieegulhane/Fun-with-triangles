@@ -67,6 +67,19 @@ nav {
 	height: 2.5px;
 	border-radius: 5px;
 	margin: 4.7px;
+	transition: 0.5s ease;
+}
+
+.burger-active .line1 {
+	transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.burger-active .line2 {
+	opacity: 0;
+}
+
+.burger-active .line3 {
+	transform: rotate(45deg) translate(-4px, -6px);
 }
 
 .nav-pills a {
