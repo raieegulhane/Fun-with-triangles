@@ -219,6 +219,15 @@ input {
 	display: inline;
 }
 
+.result {
+	color: var(--back);
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0.1rem 1rem;
+	border-radius: 0.5rem;
+	margin-top: 0.5rem;
+}
+
 .div-message {
 	display: none;
 	background-color: var(--pink1);

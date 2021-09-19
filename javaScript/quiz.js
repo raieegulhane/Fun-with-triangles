@@ -1,13 +1,14 @@
 const quizForm = document.querySelector('#form-quiz');
 const submitButton = document.querySelector('#button-submit');
-const scoreMessage = document.querySelector('.message');
+const retultMessage = document.querySelectorAll(".result");
+const message = document.querySelector('.message');
 const messageDiv = document.querySelector(".div-message");
 
 const quizAnswers = ["80º", "30", "Equilateral", "Isosceles", "Scalene", "Equilateral", "Hypotenuse", "45°", "Acute", "Obtuse"];
 
 submitButton.addEventListener('click', () => {
     messageDiv.style.display = "block";
-    scoreMessage.innerText = "Your score is " +calculateScore()+ "/10";
+    calculateScore();
 });
 
 function calculateScore () {
@@ -18,12 +19,21 @@ function calculateScore () {
 
     for (let value of formAnsweres.values()) {
         if (value === quizAnswers[index]) {
+            retultMessage[index].innerText = "Correct answer!!"
+            retultMessage[index].style.backgroundColor = "#78d8db"
             score++;
-        } 
-        index++;
+        } else {
+            retultMessage[index].innerText = "Wrong answer.\nCorrect answer is: " +quizAnswers[index];
+            retultMessage[index].style.backgroundColor = "#d9af39"
+
+        }
+        index++;    
     }
 
-    return score;
+    if (index === 10) {
+        message.innerText = "Your score is: " +score+ "/10";
+    } else {
+        message.innerText = "Select an option for each question to continue";
+    }
+
 } 
-
-
