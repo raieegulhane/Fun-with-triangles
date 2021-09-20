@@ -220,6 +220,7 @@ input {
 }
 
 .result {
+	display: none;
 	color: var(--back);
 	font-size: 15px;
 	font-weight: bold;
