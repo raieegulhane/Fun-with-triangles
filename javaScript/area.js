@@ -3,7 +3,7 @@ const calculateBtn = document.querySelector('#btn-calculate-area');
 const message = document.querySelector('.message');
 const messageDiv = document.querySelector('.div-message');
 
-calculateBtn.addEventListener('submit', () => {
+calculateBtn.addEventListener('click', () => {
     messageDiv.style.display = "block";
 
     var triHeight = inputSide[0].value;
